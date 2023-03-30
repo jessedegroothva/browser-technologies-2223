@@ -70,7 +70,7 @@ body {
 
   input[type=radio]:focus + label.select-hover-input {
     border: 2px solid #545454;
-    background-color: rgb(200, 200, 200);
+    /* background-color: rgb(200, 200, 200); */
     color: #000;
   }
 
@@ -79,6 +79,16 @@ body {
     background-color: rgb(200, 200, 200);
     color: #000;
   }
+
+  /* input type=""
+input type="tel"
+input type="email"
+
+input[type=text]:focus + label.select-hover-input {
+  border: 2px solid #545454;
+  background-color: rgb(200, 200, 200);
+  color: #000;
+} */
   
   /* input[type=radio]:checked + label {
     color: darkblue;
