@@ -24,10 +24,6 @@ body {
   .select-hover-input {
     cursor: pointer;
   }
-
-   .select-hover-input:hover {
-    text-decoration: underline;
-  }
   
   fieldset:valid {
     background-color: #90ee90;
@@ -73,8 +69,15 @@ body {
   }
 
   input[type=radio]:focus + label.select-hover-input {
-    background-color: #545454;
-    color: #fff;
+    border: 2px solid #545454;
+    background-color: rgb(200, 200, 200);
+    color: #000;
+  }
+
+  .select-hover-input:hover {
+    border: 2px solid #545454;
+    background-color: rgb(200, 200, 200);
+    color: #000;
   }
   
   /* input[type=radio]:checked + label {
