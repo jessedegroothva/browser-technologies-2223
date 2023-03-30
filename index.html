@@ -4,16 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+    <title>Studenten forum</title>
 </head>
 <body>
-    <main>
-        <form action="">
-            <label for="vname">Voornaam:</label><br>
-            <label for="email">Vul je email in:</label>
-            <label for="phone">Enter a phone number:</label><br><br>
-            <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br>
-            <input type="email" id="email" name="email"><br>
-    </main>
+    <h1>Super dat je al zo ver bent gekomen!</h1>
+    <p>Het was een stressvolle tijd tijdens de minor, maar door mijn wilskracht en doorzettingsvermogen heb je iets gedaan waar slechts 3% van de mensen aan durft te beginnen. Je heb jezelf laten zien wat je waard ben. Neem deze skills mee in alle toekomstige projecten, dan kan je zeker weten dat je het kan maken!</p>
+    
+    <form>
+        <fieldset>
+            <h2>Browser technologies</h2>
+            <label for="name">Wat is je naam?</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="nummer">Wat is je Studentnummer?</label><br>
+            <input type="tel" id="nummer" name="nummer" required><br><br>
+
+            <label for="email">Wat is je email?</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label>Met welke docent(en) heb je gewerkt?</label><br>
+            <input type="radio" id="vasilis" name="docent">
+            <label class="select-hover-input" for="vasilis">Vasilis</label><br>
+            <input type="radio" id="peter" name="docent">
+            <label class="select-hover-input" for="peter">Peter</label><br>
+            <input type="radio" id="sanne" name="docent">
+            <label class="select-hover-input" for="sanne">Sanne</label><br><br>
+
+            <label for="weeks">Wat zijn de weken dat je het vak hebt gevolgd?</label><br>
+            <input type="text" id="weeks" name="weeks" required><br><br>
+            
+            <label for="lesstof" required>Hoe vond je de lesstof van het vak op een schaal van 1-10?</label><br>
+            <input type="radio" id="1-lesstof" name="lesstof" value="1" required>
+            <label class="select-hover-input" for="1-lesstof">1</label>
+            <input type="radio" id="2-lesstof" name="lesstof" value="2">
+            <label class="select-hover-input" for="2-lesstof">2</label>
+            <input type="radio" id="3-lesstof" name="lesstof" value="3">
+            <label class="select-hover-input" for="3-lesstof">3</label>
+            <input type="radio" id="4-lesstof" name="lesstof" value="4">
+            <label class="select-hover-input" for="4-lesstof">4</label>
+            <input type="radio" id="5-lesstof" name="lesstof" value="5">
+            <label class="select-hover-input" for="5-lesstof">5</label>
+            <input type="radio" id="6-lesstof" name="lesstof" value="6">
+            <label class="select-hover-input" for="6-lesstof">6</label>
+            <input type="radio" id="7-lesstof" name="lesstof" value="7">
+            <label class="select-hover-input" for="7-lesstof">7</label>
+            <input type="radio" id="8-lesstof" name="lesstof" value="8">
+            <label class="select-hover-input" for="8-lesstof">8</label>
+            <input type="radio" id="9-lesstof" name="lesstof" value="9">
+            <label class="select-hover-input" for="9-lesstof">9</label>
+            <input type="radio" id="10-lesstof" name="lesstof" value="10">
+            <label class="select-hover-input" for="10-lesstof">10</label><br><br>
+        
+            <label for="uitleg">Hoe goed snapte je de uitleg op een schaal van 1-10?</label><br>
+            <input type="radio" id="1-uitleg" name="uitleg" value="1" required>
+            <label class="select-hover-input" for="1-uitleg">1</label>
+            <input type="radio" id="2-uitleg" name="uitleg" value="2">
+            <label class="select-hover-input" for="2-uitleg">2</label>
+            <input type="radio" id="3-uitleg" name="uitleg" value="3">
+            <label class="select-hover-input" for="3-uitleg">3</label>
+            <input type="radio" id="4-uitleg" name="uitleg" value="4">
+            <label class="select-hover-input" for="4-uitleg">4</label>
+            <input type="radio" id="5-uitleg" name="uitleg" value="5">
+            <label class="select-hover-input" for="5-uitleg">5</label>
+            <input type="radio" id="6-uitleg" name="uitleg" value="6">
+            <label class="select-hover-input" for="6-uitleg">6</label>
+            <input type="radio" id="7-uitleg" name="uitleg" value="7">
+            <label class="select-hover-input" for="7-uitleg">7</label>
+            <input type="radio" id="8-uitleg" name="uitleg" value="8">
+            <label class="select-hover-input" for="8-uitleg">8</label>
+            <input type="radio" id="9-uitleg" name="uitleg" value="9">
+            <label class="select-hover-input" for="9-uitleg">9</label>
+            <input type="radio" id="10-uitleg" name="uitleg" value="10">
+            <label class="select-hover-input" for="10-uitleg">10</label><br><br>
+            
+            <label for="snappen">Hoe goed snapte je de lesstof op een schaal van 1-10?</label><br>
+<input type="radio" id="1-snappen" name="snappen" value="1" required>
+<label class="select-hover-input" for="1-snappen">1</label>
+<input type="radio" id="2-snappen" name="snappen" value="2">
+<label class="select-hover-input" for="2-snappen">2</label>
+<input type="radio" id="3-snappen" name="snappen" value="3">
+<label class="select-hover-input" for="3-snappen">3</label>
+<input type="radio" id="4-snappen" name="snappen" value="4">
+<label class="select-hover-input" for="4-snappen">4</label>
+<input type="radio" id="5-snappen" name="snappen" value="5">
+<label class="select-hover-input" for="5-snappen">5</label>
+<input type="radio" id="6-snappen" name="snappen" value="6">
+<label class="select-hover-input" for="6-snappen">6</label>
+<input type="radio" id="7-snappen" name="snappen" value="7">
+<label class="select-hover-input" for="7-snappen">7</label>
+<input type="radio" id="8-snappen" name="snappen" value="8">
+<label class="select-hover-input" for="8-snappen">8</label>
+<input type="radio" id="9-snappen" name="snappen" value="9">
+<label class="select-hover-input" for="9-snappen">9</label>
+<input type="radio" id="10-snappen" name="snappen" value="10">
+<label class="select-hover-input" for="10-snappen">10</label>
+<br>
+        </fieldset><br>
+
+        <input type="submit" value="submit"></input>
+
+    </form><br>
+
 </body>
 </html>

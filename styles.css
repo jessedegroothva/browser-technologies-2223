@@ -1,0 +1,128 @@
+/* Styles for light mode */
+
+:root {
+    --color-main-error-bg: #ebebff;
+  }
+  
+  /* Styles for dark mode */
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-main-error-bg: #3a3a52;
+    }
+  }
+  
+
+body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  input:checked + label {
+    font-size: 1.5em;
+    }
+
+  .select-hover-input {
+    cursor: pointer;
+  }
+
+   .select-hover-input:hover {
+    text-decoration: underline;
+  }
+  
+  fieldset:valid {
+    background-color: #90ee90;
+  }
+
+  fieldset:nth-child(1):after {
+    content: 'Je bent op 20%!';
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  form fieldset:invalid {
+    background-color: var(--color-main-error-bg);
+  }
+
+  form fieldset:invalid::after {
+    content: "Ohh het lijkt erop dat je een klein foutje heb gemaakt of iets bent vergeten";
+    display: block;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  input[type=radio] {
+    position: absolute;
+    left: -1000em;
+  }
+
+  .select-hover-input {
+    display: inline-block;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px 15px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+
+  /* Style the label element when it's selected */
+  input[type=radio]:checked + label.select-hover-input {
+    background-color: #90ee90;
+    color: #000;
+  }
+
+  input[type=radio]:focus + label.select-hover-input {
+    background-color: #545454;
+    color: #fff;
+  }
+  
+  /* input[type=radio]:checked + label {
+    color: darkblue;
+    font-weight: 800;
+    font-size: 1.5em;
+  } */
+
+  label[type=radio] {
+    font-weight: 800;
+    font-size: 1.5em;
+  }
+
+  input[type=submit] {
+    padding: 12px 24px;
+    background-color: #4169e1;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
+  input:active[type=submit] {
+    padding: 12px 24px;
+    background-color: #1f50e3;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+  }
+
+
+
+/* Input fields heb ik gestijlt */
+  input[type=text] {
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #000;
+  }
+
+  input[type=tel] {
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #000;
+  }
+
+  input[type=email] {
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #000;
+  }
+
