@@ -1,119 +1,130 @@
 /* Styles for light mode */
 
 :root {
+    --color-main-bg: #ffffff;
+    --color-main-text: #000000;
+    --color-secondary-bg: #f3f3f3;
+    --color-secondary-text: #666666;
+    --color-accent: #4169e1;
     --color-main-error-bg: #ebebff;
+    --bg-fieldset: #e3fbe3;
+    --text-color: #000;
+    --button-color: #1f50e3;
+    --text-color-2: #fff;
+    /* --text-color-2: #000; */
   }
   
   /* Styles for dark mode */
   
   @media (prefers-color-scheme: dark) {
-    :root {
-      --color-main-error-bg: #3a3a52;
-    }
+  :root {
+    --color-main-bg: #1a1a1a;
+    --color-main-text: #f5f5f5;
+    --color-secondary-bg: #d8d8d866;
+    --color-secondary-text: #b3b3b3;
+    --color-accent: #1f50e3;
+    --button-color: #03DAC6;
+    --color-main-error-bg: #000;
+    --text-color: #fff;
+    --text-color-2: #000;
+    /* --text-color-2: #000; */
+  }
   }
   
-
-body {
+  body {
     font-family: 'Inter', sans-serif;
+    background-color: var(--color-main-bg);
+    color: var(--color-main-text);
   }
 
+  fieldset {
+    border-radius: 5px;
+  }
+  
   input:checked + label {
     font-size: 1.5em;
-    }
-
+  }
+  
   .select-hover-input {
     cursor: pointer;
+    background-color: var(--color-main-bg);
   }
   
   fieldset:valid {
-    background-color: #90ee90;
+    background-color: var(--bg-fieldset);
   }
-
+  
   fieldset:nth-child(1):after {
     content: 'Je bent op 20%!';
     display: block;
     text-align: center;
     margin-top: 10px;
   }
-
+  
   form fieldset:invalid {
     background-color: var(--color-main-error-bg);
   }
-
+  
   form fieldset:invalid::after {
     content: "Ohh het lijkt erop dat je een klein foutje heb gemaakt of iets bent vergeten";
     display: block;
     font-weight: 600;
     margin-top: 10px;
   }
-
+  
   input[type=radio] {
     position: absolute;
     left: -1000em;
   }
-
+  
   .select-hover-input {
     display: inline-block;
     cursor: pointer;
     margin: 5px;
     padding: 5px 15px;
-    border: 2px solid #555;
+    border: 2px solid var(--color-secondary-text);
     border-radius: 5px;
     font-size: 1em;
+    color: var(--color-main-text);
   }
-
+  
   /* Style the label element when it's selected */
   input[type=radio]:checked + label.select-hover-input {
-    background-color: #90ee90;
-    color: #000;
+    background-color: lightgreen;
+    border: 2px solid var(--text-color); 
+    color: var(--text-color-2);
   }
-
-  input[type=radio]:focus + label.select-hover-input {
-    /* border: 2px solid #545454; */
-    /* background-color: rgb(200, 200, 200); */
-    color: #000;
-  }
-
-  .select-hover-input:hover {
-    border: 2px solid #545454;
-    background-color: rgb(200, 200, 200);
-    color: #000;
-  }
-
-  /* input type=""
-input type="tel"
-input type="email"
-
-input[type=text]:focus + label.select-hover-input {
-  border: 2px solid #545454;
-  background-color: rgb(200, 200, 200);
-  color: #000;
-} */
   
-  /* input[type=radio]:checked + label {
-    color: darkblue;
-    font-weight: 800;
-    font-size: 1.5em;
-  } */
-
+  input[type=radio]:focus + label.select-hover-input {
+    /* border: 2px solid var(--text-color-2);  */
+    /* background-color: var(--color-secondary-bg); */
+    color: var(--text-color-2);
+  }
+  
+  .select-hover-input:hover {
+    border: 2px solid var(--color-secondary-text);
+    background-color: var(--color-secondary-bg);
+    color: var(--text-color);
+  }
+  
   label[type=radio] {
     font-weight: 800;
     font-size: 1.5em;
   }
-
+  
   input[type=submit] {
     padding: 12px 24px;
-    background-color: #4169e1;
-    color: #ffffff;
+    background-color: var(--color-accent);
+    color: var(--color-main-bg);
     border-radius: 5px;
     border: none;
     cursor: pointer;
   }
-
+  
   input:active[type=submit] {
     padding: 12px 24px;
-    background-color: #1f50e3;
-    color: #ffffff;
+    background-color: var(--button-color);
+    color: var(--color-main-bg);
     border-radius: 5px;
     border: none;
   }
@@ -122,20 +133,38 @@ input[type=text]:focus + label.select-hover-input {
 
 /* Input fields heb ik gestijlt */
   input[type=text] {
-    padding: 6px;
-    border-radius: 5px;
-    border: 1px solid #000;
+      padding: 6px;
+      border-radius: 5px;
+      border: 1px solid var(--text-color);
   }
 
   input[type=tel] {
-    padding: 6px;
-    border-radius: 5px;
-    border: 1px solid #000;
+      padding: 6px;
+      border-radius: 5px;
+      border: 1px solid var(--text-color);
   }
 
   input[type=email] {
+      padding: 6px;
+      border-radius: 5px;
+      border: 1px solid var(--text-color);
+  }
+
+  input:focus[type=text] {
     padding: 6px;
     border-radius: 5px;
-    border: 1px solid #000;
-  }
+    border: 2px solid var(--text-color);
+}
+
+input:focus[type=tel] {
+    padding: 6px;
+    border-radius: 5px;
+    border: 2px solid var(--text-color);
+}
+
+input:focus[type=email] {
+    padding: 6px;
+    border-radius: 5px;
+    border: 2px solid var(--text-color);
+}
 
