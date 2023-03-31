@@ -9,7 +9,6 @@
     --color-main-error-bg: #ebebff;
     --bg-fieldset: #e3fbe3;
     --text-color: #000;
-    --button-color: #1f50e3;
     --text-color-2: #fff;
     /* --text-color-2: #000; */
   }
@@ -22,11 +21,11 @@
     --color-main-text: #f5f5f5;
     --color-secondary-bg: #d8d8d866;
     --color-secondary-text: #b3b3b3;
-    --color-accent: #1f50e3;
-    --button-color: #03DAC6;
+    --color-accent: #03DAC6;
     --color-main-error-bg: #000;
     --text-color: #fff;
     --text-color-2: #000;
+    --bg-fieldset: #114611;
     /* --text-color-2: #000; */
   }
   }
@@ -90,7 +89,7 @@
   
   /* Style the label element when it's selected */
   input[type=radio]:checked + label.select-hover-input {
-    background-color: lightgreen;
+    background-color: #90ee90;
     border: 2px solid var(--text-color); 
     color: var(--text-color-2);
   }
@@ -112,6 +111,15 @@
     font-size: 1.5em;
   }
   
+  input[type=submit] {
+    padding: 12px 24px;
+    background-color: var(--color-accent);
+    color: var(--color-main-bg);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
   input[type=submit] {
     padding: 12px 24px;
     background-color: var(--color-accent);
