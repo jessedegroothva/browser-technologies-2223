@@ -40,6 +40,7 @@ const docentInputs = document.getElementsByName('docent');
 const weeksInput = document.getElementById('weeks');
 const lesstofInputs = document.getElementsByName('lesstof');
 const uitlegInputs = document.getElementsByName('uitleg');
+const snappenInput = document.getElementsByName('snappen');
 
 function saveFormData() {
   localStorage.setItem('name', nameInput.value);
@@ -70,6 +71,14 @@ function saveFormData() {
     }
   }
   localStorage.setItem('uitleg', selectedUitleg);
+  let selectedSnappen = '';
+  for (let i = 0; i < snappenInput.length; i++) {
+    if (snappenInput[i].checked) {
+      selectedSnappen = snappenInput[i].value;
+      break;
+    }
+  }
+  localStorage.setItem('snappen', selectedSnappen);
 }
 
 function populateFormData() {
@@ -95,6 +104,13 @@ function populateFormData() {
   for (let i = 0; i < uitlegInputs.length; i++) {
     if (uitlegInputs[i].value === selectedUitleg) {
       uitlegInputs[i].checked = true;
+      break;
+    }
+  }
+  const selectedSnappen = localStorage.getItem('snappen');
+  for (let i = 0; i < snappenInput.length; i++) {
+    if (snappenInput[i].value === selectedSnappen) {
+      snappenInput[i].checked = true;
       break;
     }
   }
