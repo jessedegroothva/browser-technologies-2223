@@ -141,8 +141,18 @@
   }
   
   input[type=radio]:focus + label.select-hover-input {
-    background-color: var(--color-accent);
+    background-color: #90ee90;
+    color: var(--text-color-2);
   }
+
+  input:required:invalid {
+    background-color: #e7ce3f;
+  }
+
+  input:required::placeholder {
+    color: black;
+  }
+    
   
   .select-hover-input:hover {
     border: 2px solid var(--color-secondary-text);
@@ -221,17 +231,22 @@
     border: 2px solid var(--text-color);
 }
 
+
+
 input:focus[type=tel] {
     padding: 6px;
     border-radius: 5px;
     border: 2px solid var(--text-color);
 }
 
+
+
 input:focus[type=email] {
     padding: 6px;
     border-radius: 5px;
     border: 2px solid var(--text-color);
 }
+
 
 
 
