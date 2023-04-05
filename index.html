@@ -11,57 +11,28 @@
 <body>
     <div class="tekst">
         <h1>Super dat je zo ver bent gekomen!</h1>
-        <p><span> Belangrijk om te weten:</span><br> druk pas op volgende als de achtergrond groen is.<br><br> Het was een stressvolle tijd tijdens de minor, maar door mijn wilskracht en doorzettingsvermogen heb je iets gedaan waar slechts 3% van de mensen aan durft te beginnen. Neem deze skills mee in alle toekomstige projecten, dan kan je zeker weten dat je het kan maken!</p>
-        
-        <br>
-        <progress id="progress-bar" max="100" value="0"></progress>
-        <br>
+        <p><span> Belangrijk om te weten:</span><br>Druk pas op volgende als de achtergrond groen is.<br>Velden gemarkeerd met * zijn verplicht!</p>
     </div>
 
     <form action="">
         <fieldset class="feedback-form" id="web-col">
             <h2>CSS to the rescue</h2>
-            <label for="name">Wat is je naam?</label><br>
-            <input type="text" id="name" name="name" aria-required="true" required aria-labelledby="label-name"><br>
+            <label for="name">Wat is je naam?*</label><br>
+            <input type="text" id="name" name="name" placeholder="naam" aria-required="true" required aria-labelledby="label-name"><br><br>
 
-            <label for="nummer">Wat is je Studentnummer?</label><br>
-            <input type="tel" id="nummer" name="nummer" aria-required="true" required aria-labelledby="label-nummer">
+            <label for="nummer">Wat is je Studentnummer?*</label><br>
+            <input type="tel" id="nummer" name="nummer" placeholder="223243545" aria-required="true" required aria-labelledby="label-nummer"><br><br>
 
-            <label for="email">Wat is je email?</label><br>
-            <input type="email" id="email" name="email" aria-required="true" required aria-labelledby="label-email"><br><br>
+            <label for="email">Wat is je email?*</label><br>
+            <input type="email" id="email" name="email" placeholder="email@gmail.com" aria-required="true" required aria-labelledby="label-email"><br><br>
 
-            <label>Met welke docent(en) heb je gewerkt?</label>
-            <div class="row">
-                <input type="radio" id="declan" name="docent">
-                <label class="select-hover-input" for="declan">Declan Rek</label>
-                <input type="radio" id="guido" name="docent">
-                <label class="select-hover-input" for="guido">Guido Bouwman</label>
-                <input type="radio" id="joost" name="docent">
-                <label class="select-hover-input" for="joost">Joost Faber</label>
-                <input type="radio" id="justus" name="docent">
-                <label class="select-hover-input" for="justus">Justus Sturkenboom</label>
-                <input type="radio" id="koop" name="docent">
-                <label class="select-hover-input" for="koop">Koop Reynders</label>
-                <input type="radio" id="peter" name="docent">
-                <label class="select-hover-input" for="peter">Peter Paul Koch</label>
-                <input type="radio" id="sanne" name="docent">
-                <label class="select-hover-input" for="sanne">Sanne t Hooft</label>
-                <input type="radio" id="suus" name="docent">
-                <label class="select-hover-input" for="suus">Suus ten Voorde</label>
-                <input type="radio" id="vasilis" name="docent">
-                <label class="select-hover-input" for="vasilis">Vasilis van Gemert</label>
-                <input type="radio" id="janno" name="docent">
-                <label class="select-hover-input" for="janno">Janno Kapritsias</label>
-                <input type="radio" id="robert" name="docent">
-                <label class="select-hover-input" for="robert">Robert Spier</label>
-            </div><br>
-
-            <label for="weeks">Wat is de start datum dat je het vak hebt gevolgd?</label><br>
-            <input type="date" id="weeks" name="weeks"><br><br>            
+            <p>Docenten: Sanne & Vasilis</p>
+            <p>Beginweek: 13/feb</p>
+            <p>Eindweek: 6/mrt</p>
             
-            <label for="lesstof">Hoe vond je de lesstof van het vak op een schaal van 1-10?</label>
+            <label for="lesstof">Hoe vond je de lesstof?*</label>
             <div class="row">
-                <input type="radio" id="1-lesstof" name="lesstof" value="1">
+                <input type="radio" id="1-lesstof" name="lesstof" value="1" aria-required="true" required aria-labelledby="label-lesstof">
                 <label class="select-hover-input" for="1-lesstof">1</label>
                 <input type="radio" id="2-lesstof" name="lesstof" value="2">
                 <label class="select-hover-input" for="2-lesstof">2</label>
@@ -83,9 +54,9 @@
                 <label class="select-hover-input" for="10-lesstof">10</label>
             </div><br>
         
-            <label for="uitleg">Hoe goed snapte je de uitleg op een schaal van 1-10?</label>
+            <label for="uitleg">Hoe goed snapte je de uitleg?*</label>
             <div class="row">
-                <input type="radio" id="1-uitleg" name="uitleg" value="1">
+                <input type="radio" id="1-uitleg" name="uitleg" value="1" aria-required="true" required aria-labelledby="label-uitleg">
                 <label class="select-hover-input" for="1-uitleg">1</label>
                 <input type="radio" id="2-uitleg" name="uitleg" value="2">
                 <label class="select-hover-input" for="2-uitleg">2</label>
@@ -107,9 +78,9 @@
                 <label class="select-hover-input" for="10-uitleg">10</label>
             </div><br>
             
-            <label for="snappen">Hoe goed snapte je de lesstof op een schaal van 1-10?</label>
+            <label for="snappen">Hoe goed snapte je de lesstof?*</label>
             <div class="row">
-                <input type="radio" id="1-snappen" name="snappen" value="1">
+                <input type="radio" id="1-snappen" name="snappen" value="1" aria-required="true" required aria-labelledby="label-snappen">
                 <label class="select-hover-input" for="1-snappen">1</label>
                 <input type="radio" id="2-snappen" name="snappen" value="2">
                 <label class="select-hover-input" for="2-snappen">2</label>
@@ -135,39 +106,13 @@
         <fieldset class="feedback-form" id="web-col2">
             <h2>Web app from scratch</h2>
 
-            <label>Met welke docent(en) heb je gewerkt?</label>
-            <div class="row">
-                <input type="radio" id="declan-2" name="docent-2">
-                <label class="select-hover-input" for="declan-2">Declan Rek</label>
-                <input type="radio" id="guido-2" name="docent-2">
-                <label class="select-hover-input" for="guido-2">Guido Bouwman</label>
-                <input type="radio" id="joost-2" name="docent-2">
-                <label class="select-hover-input" for="joost-2">Joost Faber</label>
-                <input type="radio" id="justus-2" name="docent-2">
-                <label class="select-hover-input" for="justus-2">Justus Sturkenboom</label>
-                <input type="radio" id="koop-2" name="docent-2">
-                <label class="select-hover-input" for="koop-2">Koop Reynders</label>
-                <input type="radio" id="peter-2" name="docent-2">
-                <label class="select-hover-input" for="peter-2">Peter Paul Koch</label>
-                <input type="radio" id="sanne-2" name="docent-2">
-                <label class="select-hover-input" for="sanne-2">Sanne t Hooft</label>
-                <input type="radio" id="suus-2" name="docent-2">
-                <label class="select-hover-input" for="suus-2">Suus ten Voorde</label>
-                <input type="radio" id="vasilis-2" name="docent-2">
-                <label class="select-hover-input" for="vasilis-2">Vasilis van Gemert</label>
-                <input type="radio" id="janno-2" name="docent-2">
-                <label class="select-hover-input" for="janno-2">Janno Kapritsias</label>
-                <input type="radio" id="robert-2" name="docent-2">
-                <label class="select-hover-input" for="robert-2">Robert Spier</label>
-
-            </div><br>
-
-            <label for="weeks-2">Wat is de start datum dat je het vak hebt gevolgd?</label><br>
-            <input type="date" id="weeks-2" name="weeks-2" required aria-labelledby="label-weeks-2"><br><br>
+            <p>Docenten: Joost & Robert</p>
+            <p>Beginweek: 13/feb</p>
+            <p>Eindweek: 6/mrt</p><br><br>
             
-            <label for="lesstof-2">Hoe vond je de lesstof van het vak op een schaal van 1-10?</label>
+            <label for="lesstof-2">Hoe vond je de lesstof?*</label>
             <div class="row">
-                <input type="radio" id="1-lesstof-2" name="lesstof-2" value="1-2">
+                <input type="radio" id="1-lesstof-2" name="lesstof-2" value="1-2" aria-required="true" required aria-labelledby="label-lesstof-2">
                 <label class="select-hover-input" for="1-lesstof-2">1</label>
                 <input type="radio" id="2-lesstof-2" name="lesstof-2" value="2-2">
                 <label class="select-hover-input" for="2-lesstof-2">2</label>
@@ -189,9 +134,9 @@
                 <label class="select-hover-input" for="10-lesstof-2">10</label>
             </div><br>
         
-            <label for="uitleg-2">Hoe goed snapte je de uitleg op een schaal van 1-10?</label>
+            <label for="uitleg-2">Hoe goed snapte je de uitleg?*</label>
             <div class="row">
-                <input type="radio" id="1-uitleg-2" name="uitleg-2" value="1-2">
+                <input type="radio" id="1-uitleg-2" name="uitleg-2" value="1-2" aria-required="true" required aria-labelledby="label-uitleg-2">
                 <label class="select-hover-input" for="1-uitleg-2">1</label>
                 <input type="radio" id="2-uitleg-2" name="uitleg-2" value="2-2">
                 <label class="select-hover-input" for="2-uitleg-2">2</label>
@@ -213,9 +158,9 @@
                 <label class="select-hover-input" for="10-uitleg-2">10</label>
             </div><br>
             
-            <label for="snappen-2">Hoe goed snapte je de lesstof op een schaal van 1-10?</label>
+            <label for="snappen-2">Hoe goed snapte je de lesstof?*</label>
             <div class="row">
-                <input type="radio" id="1-snappen-2" name="snappen-2" value="1-2">
+                <input type="radio" id="1-snappen-2" name="snappen-2" value="1-2" aria-required="true" required aria-labelledby="label-snappen-2">
                 <label class="select-hover-input" for="1-snappen-2">1</label>
                 <input type="radio" id="2-snappen-2" name="snappen-2" value="2-2">
                 <label class="select-hover-input" for="2-snappen-2">2</label>
@@ -241,38 +186,13 @@
         <fieldset class="feedback-form" id="web-col3">
             <h2>Progressive web Apps</h2>
 
-            <label>Met welke docent(en) heb je gewerkt?</label>
-            <div class="row">
-                <input type="radio" id="declan-3" name="docent-3">
-                <label class="select-hover-input" for="declan-3">Declan Rek</label>
-                <input type="radio" id="guido-3" name="docent-3">
-                <label class="select-hover-input" for="guido-3">Guido Bouwman</label>
-                <input type="radio" id="joost-3" name="docent-3">
-                <label class="select-hover-input" for="joost-3">Joost Faber</label>
-                <input type="radio" id="justus-3" name="docent-3">
-                <label class="select-hover-input" for="justus-3">Justus Sturkenboom</label>
-                <input type="radio" id="koop-3" name="docent-3">
-                <label class="select-hover-input" for="koop-3">Koop Reynders</label>
-                <input type="radio" id="peter-3" name="docent-3">
-                <label class="select-hover-input" for="peter-3">Peter Paul Koch</label>
-                <input type="radio" id="sanne-3" name="docent-3">
-                <label class="select-hover-input" for="sanne-3">Sanne t Hooft</label>
-                <input type="radio" id="suus-3" name="docent-3">
-                <label class="select-hover-input" for="suus-3">Suus ten Voorde</label>
-                <input type="radio" id="vasilis-3" name="docent-3">
-                <label class="select-hover-input" for="vasilis-3">Vasilis van Gemert</label>
-                <input type="radio" id="janno-3" name="docent-3">
-                <label class="select-hover-input" for="janno-3">Janno Kapritsias</label>
-                <input type="radio" id="robert-3" name="docent-3">
-                <label class="select-hover-input" for="robert-3">Robert Spier</label>
-            </div><br>
-
-            <label for="weeks-3">Wat is de start datum dat je het vak hebt gevolgd?</label><br>
-            <input type="date" id="weeks-3" name="weeks-3" required aria-labelledby="label-weeks-3">><br><br>
+            <p>Docenten: Janno & Declan</p>
+            <p>Beginweek: 20/mrt</p>
+            <p>Eindweek: 3/apr</p><br><br>
             
-            <label for="lesstof-3">Hoe vond je de lesstof van het vak op een schaal van 1-10?</label>
+            <label for="lesstof-3">Hoe vond je de lesstof?*</label>
             <div class="row">
-                <input type="radio" id="1-lesstof-3" name="lesstof-3" value="1-3">
+                <input type="radio" id="1-lesstof-3" name="lesstof-3" value="1-3" aria-required="true" required aria-labelledby="label-lesstof-3">
                 <label class="select-hover-input" for="1-lesstof-3">1</label>
                 <input type="radio" id="2-lesstof-3" name="lesstof-3" value="2-3">
                 <label class="select-hover-input" for="2-lesstof-3">2</label>
@@ -294,9 +214,9 @@
                 <label class="select-hover-input" for="10-lesstof-3">10</label>
             </div><br>
 
-            <label for="uitleg-3">Hoe goed snapte je de uitleg op een schaal van 1-10?</label>
+            <label for="uitleg-3">Hoe goed snapte je de uitleg?*</label>
             <div class="row">
-                <input type="radio" id="1-uitleg-3" name="uitleg-3" value="1-3">
+                <input type="radio" id="1-uitleg-3" name="uitleg-3" value="1-3" aria-required="true" required aria-labelledby="label-uitleg-3">
                 <label class="select-hover-input" for="1-uitleg-3">1</label>
                 <input type="radio" id="2-uitleg-3" name="uitleg-3" value="2-3">
                 <label class="select-hover-input" for="2-uitleg-3">2</label>
@@ -318,9 +238,9 @@
                 <label class="select-hover-input" for="10-uitleg-3">10</label><br>
             </div><br>
             
-            <label for="snappen-3">Hoe goed snapte je de lesstof op een schaal van 1-10?</label>
+            <label for="snappen-3">Hoe goed snapte je de lesstof?*</label>
             <div class="row">
-                <input type="radio" id="1-snappen-3" name="snappen-3" value="1-3">
+                <input type="radio" id="1-snappen-3" name="snappen-3" value="1-3" aria-required="true" required aria-labelledby="label-snappen-3">
                 <label class="select-hover-input" for="1-snappen-3">1</label>
                 <input type="radio" id="2-snappen-3" name="snappen-3" value="2-3">
                 <label class="select-hover-input" for="2-snappen-3">2</label>
@@ -346,38 +266,13 @@
         <fieldset class="feedback-form" id="web-col4">
             <h2>Browser technologies</h2>
 
-            <label>Met welke docent(en) heb je gewerkt?</label>
-            <div class="row">
-                <input type="radio" id="declan-4" name="docent-4">
-                <label class="select-hover-input" for="declan-4">Declan Rek</label>
-                <input type="radio" id="guido-4" name="docent-4">
-                <label class="select-hover-input" for="guido-4">Guido Bouwman</label>
-                <input type="radio" id="joost-4" name="docent-4">
-                <label class="select-hover-input" for="joost-4">Joost Faber</label>
-                <input type="radio" id="justus-4" name="docent-4">
-                <label class="select-hover-input" for="justus-4">Justus Sturkenboom</label>
-                <input type="radio" id="koop-4" name="docent-4">
-                <label class="select-hover-input" for="koop-4">Koop Reynders</label>
-                <input type="radio" id="peter-4" name="docent-4">
-                <label class="select-hover-input" for="peter-4">Peter Paul Koch</label>
-                <input type="radio" id="sanne-4" name="docent-4">
-                <label class="select-hover-input" for="sanne-4">Sanne t Hooft</label>
-                <input type="radio" id="suus-4" name="docent-4">
-                <label class="select-hover-input" for="suus-4">Suus ten Voorde</label>
-                <input type="radio" id="vasilis-4" name="docent-4">
-                <label class="select-hover-input" for="vasilis-4">Vasilis van Gemert</label>
-                <input type="radio" id="janno-4" name="docent-4">
-                <label class="select-hover-input" for="janno-4">Janno Kapritsias</label>
-                <input type="radio" id="robert-4" name="docent-4">
-                <label class="select-hover-input" for="robert-4">Robert Spier</label>
-            </div><br>
-
-            <label for="weeks-4">Wat is de start datum dat je het vak hebt gevolgd?</label><br>
-            <input type="date" id="weeks-4" name="weeks-4" required aria-labelledby="label-weeks-4"><br><br>
+            <p>Docenten: Vasilis & Peter-Paul</p>
+            <p>Beginweek: 20/mrt</p>
+            <p>Eindweek: 3/apr</p><br><br>
             
-            <label for="lesstof-4">Hoe vond je de lesstof van het vak op een schaal van 1-10?</label>
+            <label for="lesstof-4">Hoe vond je de lesstof?*</label>
             <div class="row">
-                <input type="radio" id="1-lesstof-4" name="lesstof-4" value="1-4">
+                <input type="radio" id="1-lesstof-4" name="lesstof-4" value="1-4" aria-required="true" required aria-labelledby="label-lesstof-4">
                 <label class="select-hover-input" for="1-lesstof-4">1</label>
                 <input type="radio" id="2-lesstof-4" name="lesstof-4" value="2-4">
                 <label class="select-hover-input" for="2-lesstof-4">2</label>
@@ -399,9 +294,9 @@
                 <label class="select-hover-input" for="10-lesstof-4">10</label>
             </div><br>
         
-            <label for="uitleg-4">Hoe goed snapte je de uitleg op een schaal van 1-10?</label>
+            <label for="uitleg-4">Hoe goed snapte je de uitleg?*</label>
             <div class="row">
-                <input type="radio" id="1-uitleg-4" name="uitleg-4" value="1-4">
+                <input type="radio" id="1-uitleg-4" name="uitleg-4" value="1-4" aria-required="true" required aria-labelledby="label-uitleg-4">
                 <label class="select-hover-input" for="1-uitleg-4">1</label>
                 <input type="radio" id="2-uitleg-4" name="uitleg-4" value="2-4">
                 <label class="select-hover-input" for="2-uitleg-4">2</label>
@@ -423,9 +318,9 @@
                 <label class="select-hover-input" for="10-uitleg-4">10</label>
             </div><br>
             
-            <label for="snappen-5">Hoe goed snapte je de lesstof op een schaal van 1-10?</label>
+            <label for="snappen-5">Hoe goed snapte je de lesstof?*</label>
             <div class="row">
-                <input type="radio" id="1-snappen-4" name="snappen-4" value="1-4">
+                <input type="radio" id="1-snappen-4" name="snappen-4" value="1-4" aria-required="true" required aria-labelledby="label-snappen-4">
                 <label class="select-hover-input" for="1-snappen-4">1</label>
                 <input type="radio" id="2-snappen-4" name="snappen-4" value="2-4">
                 <label class="select-hover-input" for="2-snappen-4">2</label>
@@ -451,38 +346,13 @@
         <fieldset class="feedback-form" id="web-col5">
             <h2>Human Centered Design</h2>
 
-            <label>Met welke docent(en) heb je gewerkt?</label><br>
-            <div class="row">
-                <input type="radio" id="declan-5" name="docent-5">
-                <label class="select-hover-input" for="declan-5">Declan Rek</label>
-                <input type="radio" id="guido-5" name="docent-5">
-                <label class="select-hover-input" for="guido-5">Guido Bouwman</label>
-                <input type="radio" id="joost-5" name="docent-5">
-                <label class="select-hover-input" for="joost-5">Joost Faber</label>
-                <input type="radio" id="justus-5" name="docent-5">
-                <label class="select-hover-input" for="justus-5">Justus Sturkenboom</label>
-                <input type="radio" id="koop-5" name="docent-5">
-                <label class="select-hover-input" for="koop-5">Koop Reynders</label>
-                <input type="radio" id="peter-5" name="docent-5">
-                <label class="select-hover-input" for="peter-5">Peter Paul Koch</label>
-                <input type="radio" id="sanne-5" name="docent-5">
-                <label class="select-hover-input" for="sanne-5">Sanne t Hooft</label>
-                <input type="radio" id="suus-5" name="docent-5">
-                <label class="select-hover-input" for="suus-5">Suus ten Voorde</label>
-                <input type="radio" id="vasilis-5" name="docent-5">
-                <label class="select-hover-input" for="vasilis-5">Vasilis van Gemert</label>
-                <input type="radio" id="janno-5" name="docent-5">
-                <label class="select-hover-input" for="janno-5">Janno Kapritsias</label>
-                <input type="radio" id="robert-5" name="docent-5">
-                <label class="select-hover-input" for="robert-5">Robert Spier</label>
-            </div><br>
-
-            <label for="weeks-5">Wat is de start datum dat je het vak hebt gevolgd?</label><br>
-            <input type="date" id="weeks-5" name="weeks-5" required aria-labelledby="label-weeks-5"><br><br>
+            <p>Docenten: Eric & Koop</p>
+            <p>Beginweek: 17/apr</p>
+            <p>Eindweek: 8/mei</p><br><br>
             
-            <label for="lesstof-5">Hoe vond je de lesstof van het vak op een schaal van 1-10?</label>
+            <label for="lesstof-5">Hoe vond je de lesstof?*</label>
             <div class="row">
-                <input type="radio" id="1-lesstof-5" name="lesstof-5" value="1-5">
+                <input type="radio" id="1-lesstof-5" name="lesstof-5" value="1-5" aria-required="true" required aria-labelledby="label-lesstof-5">
                 <label class="select-hover-input" for="1-lesstof-5">1</label>
                 <input type="radio" id="2-lesstof-5" name="lesstof-5" value="2-5">
                 <label class="select-hover-input" for="2-lesstof-5">2</label>
@@ -504,9 +374,9 @@
                 <label class="select-hover-input" for="10-lesstof-5">10</label>
             </div><br>
         
-            <label for="uitleg-5">Hoe goed snapte je de uitleg op een schaal van 1-10?</label>
+            <label for="uitleg-5">Hoe goed snapte je de uitleg?*</label>
             <div class="row">
-                <input type="radio" id="1-uitleg-5" name="uitleg-5" value="1-5">
+                <input type="radio" id="1-uitleg-5" name="uitleg-5" value="1-5" aria-required="true" required aria-labelledby="label-uitleg-5">
                 <label class="select-hover-input" for="1-uitleg-5">1</label>
                 <input type="radio" id="2-uitleg-5" name="uitleg-5" value="2-5">
                 <label class="select-hover-input" for="2-uitleg-5">2</label>
@@ -528,9 +398,9 @@
                 <label class="select-hover-input" for="10-uitleg-5">10</label><br><br>
             </div><br>
 
-            <label for="snappen-5">Hoe goed snapte je de lesstof op een schaal van 1-10?</label>
+            <label for="snappen-5">Hoe goed snapte je de lesstof?*</label>
             <div class="row">
-                <input type="radio" id="1-snappen-5" name="snappen-5" value="1-5">
+                <input type="radio" id="1-snappen-5" name="snappen-5" value="1-5" aria-required="true" required aria-labelledby="label-snappen-5">
                 <label class="select-hover-input" for="1-snappen-5">1</label>
                 <input type="radio" id="2-snappen-5" name="snappen-5" value="2-5">
                 <label class="select-hover-input" for="2-snappen-5">2</label>
@@ -556,38 +426,13 @@
         <fieldset class="feedback-form" id="web-col6">
                 <h2>Real time web</h2>
 
-                <label>Met welke docent(en) heb je gewerkt?</label>
-                <div class="row">
-                    <input type="radio" id="declan-6" name="docent-6">
-                    <label class="select-hover-input" for="declan-6">Declan Rek</label>
-                    <input type="radio" id="guido-6" name="docent-6">
-                    <label class="select-hover-input" for="guido-6">Guido Bouwman</label>
-                    <input type="radio" id="joost-6" name="docent-6">
-                    <label class="select-hover-input" for="joost-6">Joost Faber</label>
-                    <input type="radio" id="justus-6" name="docent-6">
-                    <label class="select-hover-input" for="justus-6">Justus Sturkenboom</label>
-                    <input type="radio" id="koop-6" name="docent-6">
-                    <label class="select-hover-input" for="koop-6">Koop Reynders</label>
-                    <input type="radio" id="peter-6" name="docent-6">
-                    <label class="select-hover-input" for="peter-6">Peter Paul Koch</label>
-                    <input type="radio" id="sanne-6" name="docent-6">
-                    <label class="select-hover-input" for="sanne-6">Sanne t Hooft</label>
-                    <input type="radio" id="suus-6" name="docent-6">
-                    <label class="select-hover-input" for="suus-6">Suus ten Voorde</label>
-                    <input type="radio" id="vasilis-6" name="docent-6">
-                    <label class="select-hover-input" for="vasilis-6">Vasilis van Gemert</label>
-                    <input type="radio" id="janno-6" name="docent-6">
-                    <label class="select-hover-input" for="janno-6">Janno Kapritsias</label>
-                    <input type="radio" id="robert-6" name="docent-6">
-                    <label class="select-hover-input" for="robert-6">Robert Spier</label>
-                </div><br>
+                <p>Docenten: Justus & Shyanta</p>
+                <p>Beginweek: 17/apr</p>
+                <p>Eindweek: 8/mei</p><br><br>
 
-                <label for="weeks-6">Wat is de start datum dat je het vak hebt gevolgd?</label><br>
-                <input type="date" id="weeks-6" name="weeks-6" required aria-labelledby="label-weeks-6"><br><br>
-
-                <label for="lesstof-6">Hoe vond je de lesstof van het vak op een schaal van 1-10?</label>
+                <label for="lesstof-6">Hoe vond je de lesstof?*</label>
                 <div class="row">
-                    <input type="radio" id="1-lesstof-6" name="lesstof-6" value="1-6">
+                    <input type="radio" id="1-lesstof-6" name="lesstof-6" value="1-6" aria-required="true" required aria-labelledby="label-lesstof-6">
                     <label class="select-hover-input" for="1-lesstof-6">1</label>
                     <input type="radio" id="2-lesstof-6" name="lesstof-6" value="2-6">
                     <label class="select-hover-input" for="2-lesstof-6">2</label>
@@ -609,9 +454,9 @@
                     <label class="select-hover-input" for="10-lesstof-6">10</label>
                 </div><br>
             
-                <label for="uitleg-6">Hoe goed snapte je de uitleg op een schaal van 1-10?</label>
+                <label for="uitleg-6">Hoe goed snapte je de uitleg?*</label>
                 <div class="row">
-                    <input type="radio" id="1-uitleg-6" name="uitleg-6" value="1-6">
+                    <input type="radio" id="1-uitleg-6" name="uitleg-6" value="1-6" aria-required="true" required aria-labelledby="label-uitleg-6">
                     <label class="select-hover-input" for="1-uitleg-6">1</label>
                     <input type="radio" id="2-uitleg-6" name="uitleg-6" value="2-6">
                     <label class="select-hover-input" for="2-uitleg-6">2</label>
@@ -633,9 +478,9 @@
                     <label class="select-hover-input" for="10-uitleg-6">10</label>
                 </div><br>
                 
-                <label for="snappen-4">Hoe goed snapte je de lesstof op een schaal van 1-10?</label>
+                <label for="snappen-4">Hoe goed snapte je de lesstof?*</label>
                 <div class="row">
-                    <input type="radio" id="1-snappen-6" name="snappen-6" value="1-6">
+                    <input type="radio" id="1-snappen-6" name="snappen-6" value="1-6" aria-required="true" required aria-labelledby="label-snappen-6">
                     <label class="select-hover-input" for="1-snappen-6">1</label>
                     <input type="radio" id="2-snappen-6" name="snappen-6" value="2-6">
                     <label class="select-hover-input" for="2-snappen-6">2</label>
@@ -656,6 +501,12 @@
                     <input type="radio" id="10-snappen-6" name="snappen-6" value="10-6">
                     <label class="select-hover-input" for="10-snappen-6">10</label>
                 </div><br>
+        </fieldset>
+
+        <fieldset>
+            <label for="lesstof-6">Ik ga heb het formulier ingevuld en wil deze verzenden:</label><br>
+            <input type="radio" id="1-lesstof-7" name="lesstof-7" value="1-7" aria-required="true" required aria-labelledby="label-lesstof-7"><br>
+            <label class="select-hover-input" for="1-lesstof-7">Ik heb alles ingevuld</label>
         </fieldset>
 
         <br><br>
