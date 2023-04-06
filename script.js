@@ -1,4 +1,3 @@
-// paginas
 const form = document.querySelector('form');
 const fieldsets = form.querySelectorAll('fieldset');
 let currentFieldsetIndex = 0;
@@ -32,7 +31,7 @@ document.querySelector('#next-btn').addEventListener('click', () => {
 });
 
 
-// cache
+
 const nameInput = document.getElementById('name');
 const nummerInput = document.getElementById('nummer');
 const emailInput = document.getElementById('email');
