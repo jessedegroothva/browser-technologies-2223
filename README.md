@@ -27,7 +27,8 @@ Nu ben ik eerste begonnen met het maken van een goede en duidelijke HTML structu
 
 ### Week 3
 Nadat ik de eerste HTML-code had geschreven, ben ik begonnen met het ontwerpen van een simpel design om een idee te krijgen van welke richting ik op wilde gaan met de styling.
-<img width="291" alt="Screenshot 2023-04-05 at 20 05 53" src="https://user-images.githubusercontent.com/24406793/230166011-d7cc3de9-b91b-4765-8378-b00ca36f5e26.png">
+
+![image](https://user-images.githubusercontent.com/90199203/230362000-40ae0466-d5be-4e0b-8203-866c4dc7fbf9.png)
 
 Ik pas het principe 1 action per screen toe, waardoor je de aandacht van de gebruiker houd. Elk fieldset heeft 1 hoofddoel, zijn mening geven over 1 vak.
 Vervolgens heb ik dit uitgewerkt in CSS.
