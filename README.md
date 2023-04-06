@@ -16,14 +16,14 @@ Hieronder zal ik mijn hele proces vastleggen, waar ben ik begonnen, wat heb ik f
 Ik wil graag een survey invullen voor mijn Web Development minor met multiple choice antwoorden. Het zou handig zijn als ik kan zien welke vragen ik al heb ingevuld en hoeveel ik er nog moet doen. En als ik een vraag heb ingevuld en later van gedachten verander, zou ik deze graag willen kunnen aanpassen. Ook wil ik de optie hebben om later verder te gaan met de enquête als ik hem niet in één keer kan afmaken.
 
 ### Week 2
-<img width="866" alt="vragenlijst" src="">
-<img src="./img/vragenlijst1">
+![vragenlijst1](https://user-images.githubusercontent.com/90199203/230361530-e0f565e3-463d-4f66-939d-23fad9f81937.png)
 Dit was mijn eerste poging om een webpagina te maken. Ik heb nog niet veel tijd besteed aan de CSS, maar wel aan de Javascript. Het is echter al wat complexer geworden dan ik oorspronkelijk had gepland.
 
 Aan het einde van week 2 heb ik besloten om helemaal opnieuw te beginnen met de kennis die ik nu had over het opslaan in de local storage en het later afmaken van vragen.
 Nu ben ik eerste begonnen met het maken van een goede en duidelijke HTML structuur. Zodat de gebruiker makkelijk kunt tappen als hij geen mogelijkheid heeft om een muis te gebruiken.
 
-<img width="745" alt="Screenshot 2023-04-05 at 20 03 08" src="https://user-images.githubusercontent.com/24406793/230165468-c794b1e0-797a-44ff-8cb2-8d35752589fe.png">
+![prestatie](https://user-images.githubusercontent.com/90199203/230361608-d2fc7edf-d718-473f-8811-df9ff5f6a858.png)
+
 
 ### Week 3
 Nadat ik de eerste HTML-code had geschreven, ben ik begonnen met het ontwerpen van een simpel design om een idee te krijgen van welke richting ik op wilde gaan met de styling.
