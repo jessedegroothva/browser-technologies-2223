@@ -9,7 +9,7 @@
     --color-main-error-bg: #ebebff;
     --bg-fieldset: #e3fbe3;
     --text-color: #000;
-    --text-color-2: #000;
+    --text-color-2: #fff;
     /* --text-color-2: #000; */
   }
   
@@ -25,7 +25,7 @@
     --color-main-error-bg: #000;
     --text-color: #fff;
     --text-color-2: #000;
-    --bg-fieldset: #27EB27;
+    --bg-fieldset: #114611;
     /* --text-color-2: #000; */
   }
   }
@@ -54,9 +54,7 @@
   }
   
   fieldset:valid {
-    /* background-color: var(--bg-fieldset); */
-    /* border-color: var(--bg-fieldset); */
-    border: 3px solid var(--bg-fieldset);
+    background-color: var(--bg-fieldset);
   }
   
   form fieldset:invalid {
@@ -78,35 +76,42 @@
   }
 
   fieldset:nth-child(2):after {
-    content: 'Je bent op 33%!';
+    content: 'Je bent op 33%! Lekker bezig!';
     display: block;
     text-align: center;
     margin-top: 10px;
   }
 
   fieldset:nth-child(3):after {
-    content: 'Je bent op 50%!';
+    content: 'Je bent op 50%! Nog maar drie!';
     display: block;
     text-align: center;
     margin-top: 10px;
   }
 
   fieldset:nth-child(4):after {
-    content: 'Je bent op 66%!';
+    content: 'Je bent op 66%! Nog maar twee te gaan!';
     display: block;
     text-align: center;
     margin-top: 10px;
   }
 
   fieldset:nth-child(5):after {
-    content: 'Je bent op 83%!';
+    content: 'Je bent op 83%! Bijna klaar!';
     display: block;
     text-align: center;
     margin-top: 10px;
   }
 
   fieldset:nth-child(6):after {
-    content: 'Top! je bent op 100%, je kunt nu je formulier verzenden!';
+    content: 'Top! je bent op 99%, druk op volgende!';
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  fieldset:nth-child(7):after {
+    content: 'Druk op submit om je formulier te verzenden!';
     display: block;
     text-align: center;
     margin-top: 10px;
@@ -136,8 +141,18 @@
   }
   
   input[type=radio]:focus + label.select-hover-input {
+    background-color: #90ee90;
     color: var(--text-color-2);
   }
+
+  input:required:invalid {
+    background-color: #e7ce3f;
+  }
+
+  input:required::placeholder {
+    color: black;
+  }
+    
   
   .select-hover-input:hover {
     border: 2px solid var(--color-secondary-text);
@@ -216,11 +231,15 @@
     border: 2px solid var(--text-color);
 }
 
+
+
 input:focus[type=tel] {
     padding: 6px;
     border-radius: 5px;
     border: 2px solid var(--text-color);
 }
+
+
 
 input:focus[type=email] {
     padding: 6px;
@@ -228,36 +247,6 @@ input:focus[type=email] {
     border: 2px solid var(--text-color);
 }
 
-/* voortgang */
-progress {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#progress-bar {
-  width: 100%;
-  height: 2em;
-  /* margin-top: 1em; */
-  background-color: #ccc;
-  /* margin-bottom: 2em;; */
-  margin: .5em auto 1em auto;
-}
-
-#progress-bar::-webkit-progress-bar {
-  background-color: #ccc;
-}
-
-#progress-bar::-webkit-progress-value {
-  background-color: #90ee90;
-}
-
-
-/* feedback */
-.feedback-form:invalid {
-  border: 2px solid #6191eb;
-  box-shadow: 0 0 5px #6191eb;
-}
 
 
 
@@ -293,7 +282,7 @@ progress {
   
   button {
     padding: 12px 24px;
-    background-color: var(--color-secondary-text);
+    background-color: var(--color-accent);
     color: var(--color-main-bg);
     border-radius: 5px;
     border: none;
@@ -303,7 +292,7 @@ progress {
 
   button[type=submit] {
     padding: 12px 24px;
-    background-color: var(--color-accent);
+    background-color: var(--color-secondary-text);
     color: var(--color-main-bg);
     border-radius: 5px;
     border: none;

@@ -1,3 +1,4 @@
+// paginas
 const form = document.querySelector('form');
 const fieldsets = form.querySelectorAll('fieldset');
 let currentFieldsetIndex = 0;
@@ -31,30 +32,19 @@ document.querySelector('#next-btn').addEventListener('click', () => {
 });
 
 
-
-// chache wordt opgeslagen
+// cache
 const nameInput = document.getElementById('name');
 const nummerInput = document.getElementById('nummer');
 const emailInput = document.getElementById('email');
-const docentInputs = document.getElementsByName('docent');
-const weeksInput = document.getElementById('weeks');
 const lesstofInputs = document.getElementsByName('lesstof');
 const uitlegInputs = document.getElementsByName('uitleg');
 const snappenInput = document.getElementsByName('snappen');
+
 
 function saveFormData() {
   localStorage.setItem('name', nameInput.value);
   localStorage.setItem('nummer', nummerInput.value);
   localStorage.setItem('email', emailInput.value);
-  let selectedDocent = '';
-  for (let i = 0; i < docentInputs.length; i++) {
-    if (docentInputs[i].checked) {
-      selectedDocent = docentInputs[i].value;
-      break;
-    }
-  }
-  localStorage.setItem('docent', selectedDocent);
-  localStorage.setItem('weeks', weeksInput.value);
   let selectedLesstof = '';
   for (let i = 0; i < lesstofInputs.length; i++) {
     if (lesstofInputs[i].checked) {
@@ -81,18 +71,11 @@ function saveFormData() {
   localStorage.setItem('snappen', selectedSnappen);
 }
 
+
 function populateFormData() {
   nameInput.value = localStorage.getItem('name');
   nummerInput.value = localStorage.getItem('nummer');
   emailInput.value = localStorage.getItem('email');
-  const selectedDocent = localStorage.getItem('docent');
-  for (let i = 0; i < docentInputs.length; i++) {
-    if (docentInputs[i].value === selectedDocent) {
-      docentInputs[i].checked = true;
-      break;
-    }
-  }
-  weeksInput.value = localStorage.getItem('weeks');
   const selectedLesstof = localStorage.getItem('lesstof');
   for (let i = 0; i < lesstofInputs.length; i++) {
     if (lesstofInputs[i].value === selectedLesstof) {
@@ -116,6 +99,17 @@ function populateFormData() {
   }
 }
 
+
+window.addEventListener('load', function() {
+  populateFormData();
+});
+
+
+window.addEventListener('beforeunload', function() {
+  saveFormData();
+});
+
+
 window.addEventListener('load', function() {
   populateFormData();
 });
@@ -125,20 +119,11 @@ window.addEventListener('beforeunload', function() {
 });
 
 
-// laat de voorgang zien
-const formProgress = document.querySelector('form');
-const progressBar = document.querySelector('#progress-bar');
-const progressValue = document.querySelector('#progress-bar::-webkit-progress-value');
+// required
+// select alle input elements in het fieldset
+const inputs = document.querySelectorAll('#web-col input');
 
-formProgress.addEventListener('input', (event) => {
-  const fieldsets = Array.from(formProgress.querySelectorAll('fieldset'));
-  const completedFieldsets = fieldsets.filter((fieldset) => {
-    const inputs = Array.from(fieldset.querySelectorAll('input'));
-    return inputs.every((input) => input.value !== '');
-  });
-  const progress = Math.floor((completedFieldsets.length / fieldsets.length) * 100);
-  
-  progressBar.value = progress;
-  progressValue.style.width = `${progress}%`;
+// loop door elk input en voegt de required attribute toe
+inputs.forEach(input => {
+  input.setAttribute('required', true);
 });
-
