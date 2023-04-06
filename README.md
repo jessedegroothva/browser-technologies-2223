@@ -135,8 +135,8 @@ fieldset:valid {
 
 Aangezien we ook wilden testen op een minder bekende browser, besloot ik om kaiOS te gebruiken. Na een lange tijd proberen te typen, is het uiteindelijk toch gelukt om mijn website te openen.
 
-<img width="491" alt="Screenshot 2023-04-05 at 20 30 55" src="https://user-images.githubusercontent.com/24406793/230172676-a02388aa-2d48-48df-aae0-ee00af069d23.png">
-Ik liep al snel tegen een paar dingen aan met het gebruik van Flow: 
+![image](https://user-images.githubusercontent.com/90199203/230362427-757100ab-e88c-4355-a103-d0b2b2f71984.png)
+Ik liep al snel tegen een paar dingen aan met het gebruik van kaiOS: 
 1. required werkte niet op de browser,dit zal waarschijnlijk komen omdat de functionaliteit te nieuw is, hier moest dus een fallback voor komen met javascript code. 
 
 Al met al valt het wel mee, als ik hiermee verder ga zal ik een progressiebar toevoegen. 
