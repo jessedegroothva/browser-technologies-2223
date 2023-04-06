@@ -16,7 +16,7 @@ Hieronder zal ik mijn hele proces vastleggen, waar ben ik begonnen, wat heb ik f
 Ik wil graag een survey invullen voor mijn Web Development minor met multiple choice antwoorden. Het zou handig zijn als ik kan zien welke vragen ik al heb ingevuld en hoeveel ik er nog moet doen. En als ik een vraag heb ingevuld en later van gedachten verander, zou ik deze graag willen kunnen aanpassen. Ook wil ik de optie hebben om later verder te gaan met de enquête als ik hem niet in één keer kan afmaken.
 
 ### Week 2
-<img width="866" alt="Screenshot 2023-04-05 at 19 57 46" src="https://user-images.githubusercontent.com/24406793/230164246-0d4e1ecd-cdb8-42a4-8d4f-d3eb047f3630.png">
+<img width="866" alt="vragenlijst" src="./img/vragenlijst1">
 Dit was mijn eerste poging om een webpagina te maken. Ik heb nog niet veel tijd besteed aan de CSS, maar wel aan de Javascript. Het is echter al wat complexer geworden dan ik oorspronkelijk had gepland.
 
 Aan het einde van week 2 heb ik besloten om helemaal opnieuw te beginnen met de kennis die ik nu had over het opslaan in de local storage en het later afmaken van vragen.
